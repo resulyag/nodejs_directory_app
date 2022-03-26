@@ -4,7 +4,7 @@ const router = require('express').Router()
 
 router.post('/addDirectory', directoryController.addDirectory)
 
-// router.get('/allDirectories', directoryController.getAllDirectories)
+router.get('/allDirectories', directoryController.getAllDirectories)
 
 // router.get('/published', directoryController.getPublishedProduct)
 

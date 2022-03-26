@@ -24,11 +24,11 @@ const addDirectory = async (req, res) => {
 
 // 2. get all products
 
-// const getAllUsers = async (req, res) => {
+const getAllDirectories = async (req, res) => {
 
-//     let users = await User.findAll({})
-//     res.status(200).send(users)
-// }
+    let directories = await Directory.findAll({})
+    res.status(200).send(directories)
+}
 
 // 3. get single product
 
@@ -72,7 +72,8 @@ const addDirectory = async (req, res) => {
 // }
 
 module.exports = {
-    addDirectory
+    addDirectory,
+    getAllDirectories
     // getAllDirectories,
     // getOneDirectory,
     // updateDirectory,
